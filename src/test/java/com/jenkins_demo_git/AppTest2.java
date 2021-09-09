@@ -1,20 +1,25 @@
 package com.jenkins_demo_git;
 
-import junit.framework.TestCase;
+import static org.junit.Assert.*;
 
-public class AppTest2 extends TestCase {
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
 
+public class AppTest2 {
+	
 	App app=new App();
-	protected void setUp() throws Exception {
-		super.setUp();
+	@Before
+	public void setUp() throws Exception {
 	}
 
-	protected void tearDown() throws Exception {
-		super.tearDown();
+	@After
+	public void tearDown() throws Exception {
 	}
 
+	@Test
 	public void testSum() {
-		assertEquals(10,app.sum(5,10));
+		assertEquals(10, app.sum(10,10));
 	}
 
 }
