@@ -14,7 +14,7 @@ public class AppTest2 extends TestCase {
 	}
 
 	public void testSum() {
-		assertEquals(10,app.sum(5,5));
+		assertEquals(10,app.sum(5,10));
 	}
 
 }
